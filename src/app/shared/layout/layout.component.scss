@@ -1,0 +1,117 @@
+.global-container {
+  display: flex;
+  padding: 10px;
+}
+
+.contact-container {
+  border: 1px solid grey;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .name {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .title {
+    font-size: 1em;
+    color: #666;
+  }
+
+  .profile-image {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .links {
+    display: flex;
+    gap: 15px;
+    align-self: center;
+
+    .icon {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      .svg-icon {
+        width: 100%;
+        height: 100%;
+        fill: currentColor;
+      }
+
+      &.github {
+        color: #333;
+      }
+
+      &.linkedin {
+        color: #0077b5;
+      }
+    }
+  }
+
+  .place {
+    align-self: center;
+    color: #666;
+  }
+
+  .button-container {
+    align-self: center;
+    margin-top: 10px;
+
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #0077b5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #005983;
+      }
+    }
+  }
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border: 1px solid grey;
+  margin-left: 10px;
+  border-radius: 10px;
+
+  .navigation-bar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+  }
+}
+
+.icon-link {
+  color: grey;
+}
