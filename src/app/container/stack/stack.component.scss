@@ -11,3 +11,38 @@
 .text-important {
   color: rgb(0, 119, 181);
 }
+
+.icon {
+  height: 30px;
+  transition: transform 0.3s;
+  width: 30px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  .svg-icon {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.github-icon {
+  .svg-icon {
+    fill: #a5a5a5;
+  }
+}
+
+.linkedin-icon {
+  .svg-icon {
+    fill: #0077b5;
+  }
+}
+
+.technologies-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 2rem 0rem;
+}
