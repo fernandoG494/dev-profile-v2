@@ -49,17 +49,20 @@
       }
 
       .svg-icon {
-        fill: currentColor;
         height: 100%;
         width: 100%;
       }
+    }
 
-      &.github {
-        color: #333;
+    .github-icon {
+      .svg-icon {
+        fill: #a5a5a5;
       }
+    }
 
-      &.linkedin {
-        color: #0077b5;
+    .linkedin-icon {
+      .svg-icon {
+        fill: #0077b5;
       }
     }
   }
