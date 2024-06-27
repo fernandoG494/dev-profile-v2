@@ -42,22 +42,52 @@
   <div class="content-container">
     <router-outlet></router-outlet>
     <div class="navigation-bar-container">
-      <a href="/dashboard" class="icon-link">
+      <a
+        href="/dashboard"
+        class="icon-link"
+        matTooltip="Home"
+        matTooltipPosition="above"
+      >
         <mat-icon fontIcon="home"></mat-icon>
       </a>
-      <a href="/about" class="icon-link">
+      <a
+        href="/about"
+        class="icon-link"
+        matTooltip="About"
+        matTooltipPosition="above"
+      >
         <mat-icon fontIcon="person"></mat-icon>
       </a>
-      <a href="/resume" class="icon-link">
+      <a
+        href="/resume"
+        class="icon-link"
+        matTooltip="Resume"
+        matTooltipPosition="above"
+      >
         <mat-icon fontIcon="insert_drive_file"></mat-icon>
       </a>
-      <a href="/stack" class="icon-link">
+      <a
+        href="/stack"
+        class="icon-link"
+        matTooltip="Stack"
+        matTooltipPosition="above"
+      >
         <mat-icon fontIcon="construction"></mat-icon>
       </a>
-      <a href="/projects" class="icon-link">
+      <a
+        href="/projects"
+        class="icon-link"
+        matTooltip="Projects"
+        matTooltipPosition="above"
+      >
         <mat-icon fontIcon="workspaces"></mat-icon>
       </a>
-      <a class="icon-link" (click)="handleContactButton()">
+      <a
+        class="icon-link"
+        (click)="handleContactButton()"
+        matTooltip="Contact"
+        matTooltipPosition="above"
+      >
         <mat-icon fontIcon="email"></mat-icon>
       </a>
     </div>
