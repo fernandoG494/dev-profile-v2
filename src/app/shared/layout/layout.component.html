@@ -44,7 +44,10 @@
     <div class="navigation-bar-container">
       <a
         href="/dashboard"
-        class="icon-link"
+        [ngClass]="{
+          'icon-link': true,
+          'icon-selected': getCurrentRoute() == '/dashboard'
+        }"
         matTooltip="Home"
         matTooltipPosition="above"
       >
@@ -52,7 +55,10 @@
       </a>
       <a
         href="/about"
-        class="icon-link"
+        [ngClass]="{
+          'icon-link': true,
+          'icon-selected': getCurrentRoute() == '/about'
+        }"
         matTooltip="About"
         matTooltipPosition="above"
       >
@@ -60,7 +66,10 @@
       </a>
       <a
         href="/resume"
-        class="icon-link"
+        [ngClass]="{
+          'icon-link': true,
+          'icon-selected': getCurrentRoute() == '/resume'
+        }"
         matTooltip="Resume"
         matTooltipPosition="above"
       >
@@ -68,7 +77,10 @@
       </a>
       <a
         href="/stack"
-        class="icon-link"
+        [ngClass]="{
+          'icon-link': true,
+          'icon-selected': getCurrentRoute() == '/stack'
+        }"
         matTooltip="Stack"
         matTooltipPosition="above"
       >
@@ -76,7 +88,10 @@
       </a>
       <a
         href="/projects"
-        class="icon-link"
+        [ngClass]="{
+          'icon-link': true,
+          'icon-selected': getCurrentRoute() == '/projects'
+        }"
         matTooltip="Projects"
         matTooltipPosition="above"
       >
