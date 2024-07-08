@@ -1,3 +1,22 @@
 .content-container {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 15px;
+}
+
+.section-title {
+  color: #0077b5;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+
+  .project {
+    margin-right: 10px;
+    padding: 10px;
+    max-width: 200px;
+  }
 }

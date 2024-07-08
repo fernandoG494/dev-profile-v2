@@ -1,1 +1,33 @@
-<p>[On build]</p>
+<div class="content-container">
+  <div class="section">
+    <p class="section-title">Back-end projects</p>
+    <div class="projects-container">
+      <div class="project">
+        <project-card
+          [projectName]="'Auth users'"
+          [projectDescription]="
+            'NestJS CRUD service for users, includes JWT and end points protection'
+          "
+          [projectLink]="'https://github.com/fernandoG494/auth-users'"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-title">Front-end projects</p>
+    <div class="projects-container">
+      <div class="project">
+        <project-card
+          [projectName]="'Secure pass'"
+          [projectDescription]="
+            'Simple web service to generate secure and unique passwords developed on Angular'
+          "
+          [projectLink]="
+            'https://github.com/fernandoG494/secure-pass-generator'
+          "
+        />
+      </div>
+    </div>
+  </div>
+</div>
